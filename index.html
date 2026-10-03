@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>С++ машинаға бағытталған бағдарламалау — электронды оқу құралы</title>
+<meta name="description" content="С++ машинаға бағытталған бағдарламалау пәні бойынша заманауи электронды оқу құралы">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <button id="menuBtn" class="icon-btn" aria-label="Мазмұн">☰</button>
+    <div class="brand"><span class="brand-mark">C++</span><span>ONLINE BOOK</span></div>
+    <div class="top-actions"><button id="themeBtn" class="icon-btn" aria-label="Түсті ауыстыру">◐</button><button id="fullscreenBtn" class="icon-btn" aria-label="Толық экран">⛶</button></div>
+  </header>
+  <main class="reader">
+    <div class="book-shadow"></div>
+    <section id="book" class="book" aria-label="Электронды кітап"></section>
+  </main>
+  <footer class="controls">
+    <button id="prevBtn" class="nav-btn">← Алдыңғы бет</button>
+    <div class="page-indicator"><span id="pageCurrent">1</span> / <span id="pageTotal">1</span></div>
+    <button id="nextBtn" class="nav-btn">Келесі бет →</button>
+  </footer>
+</div>
+<aside id="sidebar" class="sidebar">
+  <div class="sidebar-head"><b>Мазмұны</b><button id="closeMenu" class="icon-btn">×</button></div>
+  <div id="tocSide"></div>
+</aside>
+<div id="overlay" class="overlay"></div>
+<script src="pages.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
